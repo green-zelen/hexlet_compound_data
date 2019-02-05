@@ -32,6 +32,4 @@
 // toString(findPrimitiveBox(pair2)); // (1, 5)
 
 import { car, cdr, isPair, toString } from 'hexlet-pairs'; // eslint-disable-line
-
-const findPrimitiveBox = (pair) => isPair(car(pair)) === isPair(cdr(pair)) ? pair : findPrimitiveBox(isPair(car(pair)) ? car(pair) : cdr(pair));
-export default findPrimitiveBox;
+export default (pair) => isPair(car(pair)) === isPair(cdr(pair)) ? pair : findPrimitiveBox(isPair(car(pair)) ? car(pair) : cdr(pair));
