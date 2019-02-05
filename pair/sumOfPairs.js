@@ -14,5 +14,5 @@ const sumOfPairs = (pair1, pair2) => {
   const sumX = car(pair1) + car(pair2);
   const sumY = cdr(pair1) + cdr(pair2);
   return cons(sumX, sumY);
-}
+};
 export default sumOfPairs;
